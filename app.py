@@ -4,11 +4,14 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
+    #import random
     blogs = [
         {"id":1, "title": "Wanderstop - A game that made me both stop and wander"},
         {"id":2, "title": "Clair Obscur: Expedition 33 - This game sure aged me 33 years"},
         {"id":3, "title": "Jusant - These french games sure be hitting me in the feels"},
     ]
+    #if random.randint(1, 2) == 1:
+        #return render_template("home2.html", blogs=blogs)
     return render_template("home.html", blogs=blogs)
 
 @app.route("/blog/<int:blog_id>")
