@@ -2,12 +2,12 @@
 {% block title %} Blog {% endblock %}
 
 {% block content %}
-    <h1>Welcome to the Blog!</h1>
+    <h1 style="color: #124e78;">Welcome to the Blog!</h1>
 
     <ul>
         {% for blog in blogs %}
             <li>
-                <a href="/blog/{{blog.id}}"><strong>{{ blog.title }} </strong></a>
+                <a href="/blog/{{blog.id}}" style="color: #3663d3"><strong>{{ blog.title }} </strong></a>
             </li>
         {% endfor %}
     </ul>

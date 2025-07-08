@@ -21,7 +21,7 @@ def blog_posts(blog_id):
     
     blog = blogs.get(blog_id)
     if blog is None:
-        return render_template("index.html", blogs=blogs)
+        return home()
     return render_template("blog_page.html", blog=blog)
 
 if __name__ == "__main__":
